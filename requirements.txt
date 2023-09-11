@@ -4,4 +4,6 @@ ensure==1.0.2
 mkdocs-material
 openai
 gradio
+black==22.3.0
+pylint==2.15.3
 -e .

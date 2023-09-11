@@ -6,7 +6,7 @@ import os
 # Get the directory of the current script
 here = os.path.abspath(os.path.dirname(__file__))
 
-# Define the path to your README file, assuming it's named README1.md
+# Define the path to your README file, assuming it's named README.md
 readme_path = os.path.join(here, "README.md")
 
 # Check if the README file exists
@@ -16,23 +16,21 @@ if os.path.isfile(readme_path):
         long_description = fh.read()
 else:
     # If the file doesn't exist, you might want to provide a fallback or raise an error.
-    long_description = "No README1.md file found.
-    
-__version__="0.0.1"
+    long_description = "No README.md file found."
+
+__version__ = "0.0.2"
 
 REPO_NAME = "llmfast"
 AUTHOR_USER_NAME = "Abdul-Jaweed"
-AUTHOR_EMAIL = "jdgaming7320@gmail.com"
 SRC_REPO = "llmfast"
-DESCRIPTION = "its a python test package"
-
+AUTHOR_EMAIL = "jdgaming7320@gmail.com"
 
 setup(
     name=SRC_REPO,
     version=__version__,
     author=AUTHOR_USER_NAME,
     author_email=AUTHOR_EMAIL,
-    description="It's a Python machine learning package",
+    description="It's a Python LLM package",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
