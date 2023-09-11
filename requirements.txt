@@ -1,5 +1,5 @@
-ipywidgets==8.0.2
-notebook==6.4.12
+ipywidgets
+notebook
 ensure==1.0.2
 mkdocs-material
 -e .
